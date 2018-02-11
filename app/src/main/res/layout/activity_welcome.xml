@@ -58,7 +58,7 @@
         android:id="@+id/text"
         android:layout_width="215dp"
         android:layout_height="50dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/montserrat"
         android:singleLine="false"
         android:text="Find a team in your city and dominate the league"
@@ -69,13 +69,16 @@
         app:layout_constraintTop_toBottomOf="@+id/allOutTxt" />
 
     <Button
+        android:id="@+id/getStartedBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="GET STARTED"
         android:textStyle="bold"
         android:textColor="#f0f0f0"
         android:background="@drawable/swoosh_button"
-        android:layout_margin="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
         android:fontFamily="@font/montserrat"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

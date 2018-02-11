@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mediasyncnow.swoosh.LeagueActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/desiredleaguebg"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/swooshLogo"
+        android:layout_width="88dp"
+        android:layout_height="28dp"
+        android:src="@drawable/swooshlogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/desiredLeagueTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desired League"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/swooshLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="48dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/desiredLeagueTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="40dp">
+
+            <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Men"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/selector_toggle"
+                android:textOff="Men"
+                android:textOn="Men"
+                android:fontFamily="@font/montserrat"/>
+
+            <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Women"
+                android:textOff="Women"
+                android:textOn="Women"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/selector_toggle"
+                android:layout_marginTop="16dp"/>
+
+            <ToggleButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Co-ed"
+                android:textOn="Co-ed"
+                android:textOff="Co-ed"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@color/colorAccent"
+                android:background="@drawable/selector_toggle"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/swoosh_button"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"/>
+
+</android.support.constraint.ConstraintLayout>
